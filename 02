@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+ 
+
+int main (void)
+
+
+{
+
+    int i,j;
+    char q[50]={0};
+    char a[50]={0};
+    gets(q);
+
+    for (j=0,i=strlen(q)-1; i>=0; j++,i--)
+
+    {
+        a[j]=q[i];
+        printf("%c",a[j]);
+    }
+
+    printf("\n");
+
+    puts(a);
+
+system ("pause");
+return 0;
+
+}
